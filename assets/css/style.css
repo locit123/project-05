@@ -67,6 +67,27 @@ a {
     overflow: hidden;
     word-break: break-all;
 }
+
+.section__text {
+    position: relative;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #152427;
+    padding-left: 46px;
+}
+
+.section__text::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: #152427;
+}
 /* =============================HEADER==================================== */
 .header {
     margin-top: 20px;
@@ -288,29 +309,14 @@ a {
     padding: 53px 0;
 }
 
-.service__text {
-    position: relative;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    font-weight: 500;
-    color: #152427;
-    padding-left: 46px;
-}
-
-.service__text::before {
-    position: absolute;
-    top: 6px;
-    left: 0;
-    content: "";
-    display: inline-block;
-    width: 25px;
-    height: 1px;
-    background-color: #152427;
-}
-
 .service__row {
     display: flex;
     justify-content: space-between;
+}
+
+.service__text::before {
+    top: 6px;
+    transform: none;
 }
 
 .service__heading {
@@ -407,4 +413,200 @@ a {
 
 .service-item__desc {
     margin-top: 18px;
+}
+
+/* =============================ABOUT==================================== */
+.about {
+    margin-top: 104px;
+    padding: 53px 0;
+}
+
+.about__inner {
+    display: flex;
+}
+
+.about__left {
+    width: 52%;
+    position: relative;
+}
+
+.about__floating {
+    top: -6px;
+}
+
+.about__floating-position {
+    position: relative;
+}
+
+.about__position-flower {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+}
+
+.about__image {
+    display: flex;
+    column-gap: 21px;
+}
+
+.about__img {
+    flex-shrink: 0;
+    display: block;
+    width: 284px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 999px;
+}
+
+.about__img:first-child {
+    margin-top: 77px;
+}
+
+.about__info {
+    display: flex;
+    flex-direction: column;
+    padding: 19px 23px 11px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 143px;
+    background-color: #fff;
+    box-shadow: 0px 7px 54px rgba(154, 154, 154, 0.25);
+    border-radius: 8px;
+    transition: 0.25s;
+}
+
+.about__info:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.about__info-title {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: 600;
+    font-family: "Public Sans";
+    color: #152427;
+}
+
+.about__info-text {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: "Public Sans";
+    color: #152427;
+    font-weight: 500;
+}
+
+.about__info-text--total {
+    color: #575d5e;
+    margin-top: 6px;
+    font-weight: normal;
+    opacity: 0.4;
+}
+
+.about__info-text--mt {
+    margin-top: 10px;
+}
+
+.about__rectangle {
+    position: relative;
+    margin: 3px 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #eaeaea;
+}
+
+.about__rectangle::before {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    display: inline-block;
+    width: 40%;
+    height: 2px;
+    background: #83a17d;
+}
+
+.about__info-text--position {
+    text-align: end;
+}
+
+.about__info-round {
+    position: relative;
+    font-size: 1rem;
+    margin: 0.5em 0;
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 50%;
+    background-color: #eaeaea;
+}
+
+.about__info-round::before {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: #143c3c;
+}
+
+.about__info-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__info-avatars {
+    display: flex;
+}
+
+.about__info-avatar {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-left: -6px;
+}
+
+.about__info-avatar:first-child {
+    margin-left: 0;
+}
+
+.about__content {
+    width: 48%;
+    flex-shrink: 0;
+    padding-left: 64px;
+}
+
+.about__heading {
+    margin-top: 20px;
+}
+
+.about__desc {
+    margin-top: 11px;
+    --font-size-default: 1.6rem;
+}
+
+.about__row-text {
+    margin-top: 36px;
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #83a17d;
+}
+
+.about__row-percent {
+    font-size: 4.2rem;
+    line-height: 1.23;
+    font-weight: 600;
+    color: #152427;
+}
+
+.about__row-desc {
+    padding-right: 7px;
 }
