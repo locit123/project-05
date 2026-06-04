@@ -696,3 +696,90 @@ a {
     margin-left: auto;
     width: 572px;
 }
+/* =============================PROJECT==================================== */
+.project {
+    margin-top: 148px;
+    background-color: #143c3c;
+    padding: 116px 0 63px;
+}
+
+.project__inner {
+    position: relative;
+}
+
+.project__heading {
+    width: 457px;
+    color: #fff;
+}
+
+.project__heading::after {
+    right: 97px;
+    background: #83a17d;
+}
+
+.project__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project__desc {
+    --font-size-default: 1.8rem;
+    width: 590px;
+    margin-bottom: 13px;
+}
+
+.project__row-text {
+    font-size: 1.8rem;
+    margin-right: 26px;
+    line-height: 1.55;
+    font-weight: 500;
+    font-family: "Public Sans";
+    color: #fff;
+}
+
+.process__row-ic {
+    color: #80a07b;
+    rotate: 180deg;
+}
+
+.project__video {
+    position: relative;
+    margin-top: 65px;
+    height: 544px;
+    width: 100%;
+}
+
+.project__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+.project__btn {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.project__decor {
+    position: absolute;
+    top: 0;
+    right: -50px;
+}
+
+.project__flower {
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
