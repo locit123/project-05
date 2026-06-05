@@ -894,6 +894,7 @@ a {
 }
 
 .articles-item__info {
+    height: 204px;
     padding-top: 26px;
     transition: 0.25s;
 }
@@ -953,4 +954,113 @@ a {
     line-height: 1.2;
     font-weight: 500;
     color: #575d5e;
+}
+/* =============================FOOTER==================================== */
+.footer {
+    margin-top: 102px;
+    padding: 72px 0 50px;
+    background-color: #143c3c;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 45px;
+}
+
+.footer__row::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        #143c3c,
+        #295a5a 53.48%,
+        rgba(38, 82, 82, 0)
+    );
+}
+
+.footer__column:first-child {
+    width: 59%;
+}
+
+.footer__heading {
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer-form {
+    display: flex;
+    margin-top: 25px;
+    max-width: 354px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #6a8383;
+}
+
+.footer-form__input {
+    flex-grow: 1;
+    outline: none;
+    border: none;
+    padding: 10px 10px 10px 0;
+    background: transparent;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #6a8383;
+}
+
+.footer-form__submit {
+    background: transparent;
+    border: none;
+    padding: 0 10px;
+}
+
+.footer-form__icon {
+    rotate: 180deg;
+    color: #c4c4c4;
+}
+
+.footer__social {
+    margin-top: 47px;
+    display: flex;
+    column-gap: 22px;
+}
+
+.footer__ic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid #265252;
+}
+
+.footer__sub-heading {
+    font-size: 1.8rem;
+    line-height: 1.55;
+    font-weight: 500;
+    font-family: "Public Sans";
+    color: #fff;
+}
+
+.footer__link {
+    font-size: 1.6rem;
+    line-height: 2.2;
+    font-weight: 500;
+    font-family: "Public Sans";
+    color: #6a8383;
+}
+
+.footer__copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.85;
+    color: #aab3ba;
 }
