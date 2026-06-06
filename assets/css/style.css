@@ -881,12 +881,8 @@ a {
     column-gap: 30px;
 }
 
-.articles-item {
-    transition: 0.25s;
-}
-
 .articles-item__thumb {
-    display: inline-block;
+    display: block;
     height: 317px;
     width: 100%;
     object-fit: cover;
@@ -895,8 +891,16 @@ a {
 
 .articles-item__info {
     height: 204px;
+    border-top: none;
     padding-top: 26px;
+    border-radius: 0 0 20px 20px;
     transition: 0.25s;
+}
+
+.articles-item:hover .articles-item__info {
+    padding: 26px 30px 12px;
+    box-shadow: 0px 12px 74px rgba(91, 91, 91, 0.25);
+    background-color: #fff;
 }
 
 .articles-item__link {
@@ -910,16 +914,18 @@ a {
     color: #000;
     transition: 0.25s;
 }
+
+.articles-item:hover .articles-item__link {
+    background-color: #143c3c;
+    color: #fff;
+}
 .articles-item__line {
     border-bottom: 1px solid #e2eddf;
-    padding-bottom: 38px;
     transition: 0.25s;
 }
 
-.articles-item:hover .articles-item__line {
-    padding-bottom: 9px;
-}
 .articles-item__desc {
+    height: 90px;
     position: relative;
     margin-top: 13px;
     font-size: 1.8rem;
@@ -927,23 +933,7 @@ a {
     font-weight: 600;
     color: #143c3c;
     transition: 0.25s;
-    --line-clamp: 2;
-}
-
-.articles-item:hover .articles-item__desc {
     --line-clamp: 3;
-}
-
-.articles-item:hover .articles-item__info {
-    box-shadow: 0px 12px 74px rgba(91, 91, 91, 0.25);
-    border-radius: 0px 0px 20px 20px;
-    background-color: #fff;
-    padding: 26px 30px 12px;
-}
-
-.articles-item:hover .articles-item__link {
-    background-color: #143c3c;
-    color: #fff;
 }
 
 .articles-item__text {
@@ -1017,12 +1007,19 @@ a {
 .footer-form__submit {
     background: transparent;
     border: none;
-    padding: 0 10px;
+    padding: 0 16px;
+    transition: 0.25s;
+    color: #c4c4c4;
+}
+
+.footer-form__submit:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #143c3c;
 }
 
 .footer-form__icon {
     rotate: 180deg;
-    color: #c4c4c4;
 }
 
 .footer__social {
@@ -1055,6 +1052,12 @@ a {
     font-weight: 500;
     font-family: "Public Sans";
     color: #6a8383;
+    transition: 0.25s;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .footer__copyright {
